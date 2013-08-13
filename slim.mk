@@ -20,10 +20,6 @@ $(call inherit-product, vendor/slim/config/common_ledflash.mk)
 # Inherit device settings
 $(call inherit-product, vendor/slim/config/common_sgs.mk)
 
-# Copy Bootanimation
-PRODUCT_COPY_FILES +=  \
-    vendor/slim/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := t0ltetmo
 PRODUCT_NAME := slim_t0ltetmo
