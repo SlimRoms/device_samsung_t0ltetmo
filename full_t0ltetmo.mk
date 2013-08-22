@@ -21,6 +21,8 @@
 # lines, full and toro, hence its name.
 #
 
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 $(call inherit-product-if-exists, vendor/samsung/t0ltetmo/t0ltetmo-vendor.mk)
 
 # Inherit from those products. Most specific first.
